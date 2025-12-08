@@ -1,0 +1,25 @@
+body {
+  background-color: #f0f2f5; /* Warna background abu-abu lembut */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  transition: transform 0.2s; /* Animasi halus saat hover */
+}
+
+.card:hover {
+  transform: translateY(-2px); /* Kartu naik sedikit saat ditunjuk mouse */
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0d6efd 0%, #0043a8 100%); /* Gradasi warna navbar */
+}
+
+/* Kustomisasi Scrollbar Tabel */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
