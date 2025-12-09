@@ -1,16 +1,43 @@
-# React + Vite
+# 💻 Frontend Aplikasi Data Siswa - Uji Kompetensi Keahlian (UKK)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repository ini berisi source code **Frontend** (Client Side) untuk antarmuka aplikasi Data Siswa. Dibangun menggunakan **React.js** (Vite) dan **Bootstrap** untuk tampilan yang responsif dan modern.
 
-Currently, two official plugins are available:
+## ✨ Fitur Antarmuka (UI/UX)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Auto Code Display**: Menampilkan Kode Siswa otomatis (S-XXX) dengan tampilan *Read-Only* agar user paham bahwa kode dibuat oleh sistem.
+* **Validasi & Notifikasi**: Menampilkan pesan *Alert* (Sukses/Gagal) yang informatif, termasuk menangkap pesan error dari Trigger database jika ada data ganda.
+* **Responsive Design**: Tampilan rapi di layar desktop maupun mobile menggunakan Bootstrap 5.
+* **Single Page Feel**: Interaksi cepat tanpa reload halaman menggunakan State Management React.
 
-## React Compiler
+## 🛠️ Teknologi yang Digunakan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Library**: React.js v18+
+* **Build Tool**: Vite
+* **Styling**: Bootstrap 5 & Bootstrap Icons
+* **HTTP Client**: Axios
 
-## Expanding the ESLint configuration
+## ⚙️ Cara Instalasi & Menjalankan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.  **Clone Repository**
+    ```bash
+    git clone [https://github.com/sulukun/frontend-siswa.git](https://github.com/sulukun/frontend-siswa.git)
+    cd frontend-siswa
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Jalankan Aplikasi**
+    ```bash
+    npm run dev
+    ```
+    Aplikasi biasanya berjalan di `http://localhost:5173`.
+
+## ⚠️ Catatan Penggunaan
+
+Pastikan **Server Backend** sudah berjalan di port `5000` sebelum menjalankan frontend ini, agar data bisa diambil dari database.
+
+---
+**Dibuat oleh:** Sulu Edward Julianto
